@@ -1,7 +1,7 @@
 //styles
 import "./Create.css"
 
-export default fundction Create() {
+export default function Create() {
     return(
         <div>
         Create

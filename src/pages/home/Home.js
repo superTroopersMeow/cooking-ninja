@@ -1,7 +1,7 @@
 //styles
 import "./Home.css"
 
-export default fundction Home() {
+export default function Home() {
     return ( 
         <div>
       Home

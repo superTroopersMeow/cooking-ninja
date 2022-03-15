@@ -1,11 +1,11 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 //pages components
-import Navbar from './components/Navbar';
-import Home from "./pages/home/Home"
-import Create from "./pages/create/Create"
-import Search from "./pages/search/Search"
-import Recipe from "./pages/recipe/Recipe"
+import Navbar from './components/Navbar'
+import Home from './pages/home/Home'
+import Search from './pages/search/Search'
+import Recipe from './pages/recipe/Recipe'
+import Create from './pages/create/Create'
 
 //styles
 import './App.css'
@@ -17,12 +17,12 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/"> 
-        <Home/>
+        <Home />
        </Route>
-       <Route path="create">
-         <Create/>
+       <Route path="/create">
+         <Create />
        </Route>
-       <Route path="search">
+       <Route path="/search">
          <Search/>
          </Route>
        <Route path="/recipes/:id">

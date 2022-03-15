@@ -1,17 +1,16 @@
 
 import {useFetch} from "../../hooks/useFetch"
-
+//import components
+import RecipeList from "../../components/RecipeList"
 
 //styles
 import "./Home.css"
 
-//import components
-import RecipeList from "../../components/RecipeList"
+
 
 
 export default function Home() {
-  const {data,isPending,error}
-   = useFetch("http://localhost:3000/recipes")
+  const {data,isPending,error} = useFetch('http://localhost:3000/recipes')
 
     return ( 
         <div className="home">

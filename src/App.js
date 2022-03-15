@@ -11,6 +11,10 @@ import ThemeSelector from './components/ThemeSelector'
 // styles
 import './App.css'
 
+//use theme function
+function App() {
+  const { mode } = useTheme()
+
 function App() {
   return (
     <div className="App">

@@ -1,5 +1,4 @@
-
-import { createContext , useReducer} from 'react'
+import { createContext, useReducer } from 'react'
 
 export const ThemeContext = createContext()
 
@@ -16,10 +15,10 @@ const themeReducer = (state, action) => {
 
 export function ThemeProvider({ children }) {
   const [state, dispatch] = useReducer(themeReducer, {
-    color: '#58249c',
-    mode: 'dark'
+    color: '#58249c'
   })
-const changeColor = (color) => {
+
+  const changeColor = (color) => {
     dispatch({ type: 'CHANGE_COLOR', payload: color })
   }
   const changeMode = (mode) => {
